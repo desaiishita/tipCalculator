@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="handraise.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Let's calculate what your total would be after a tip. 💲</h1>
+    <h3>Enter the subtotal of the bill ($) :</h3>
+        <input type = "number" id = "billVal" placeholder="">
+        <br>
+        <br>
+    <p>Select tip value</p>
+        <button onclick = "tipTotal (0)">No Tip</button>
+        <button onclick = "tipTotal (15)">15%</button>
+        <button onclick = "tipTotal (18)">18%</button>
+        <button onclick = "tipTotal (20)">20%</button>
+        <br>
+        <br>
+    <p>Custom Tip (%) : </p> 
+        <input type = "number" id ="customTip">
+        <button onclick = "tipTotal (0)">Enter</button>
+
+
+    <h3>The total amount to be paid including the tip would be :</h3>
+        <p id ="totalVal"></p>
+        <br>
+        <br>
+        <button onclick="resetInput()">Reset</button>
+
+    <script src = "index.js"></script>
+</body>
+</html>
