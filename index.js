@@ -21,8 +21,6 @@ function tipTotal (tip) {
         whichTip = tip;
     }
 
-// inspired by My Project Ideas - Youtube
-
     let billBef = document.getElementById("billVal").value * 1;
     let tipVal = (billBef * whichTip)/100;
     let billAft = billBef + tipVal;
